@@ -1,0 +1,8 @@
+# Routing configuration is necessary to be added here, 
+# So that the Zuul could know which request to be redirected to which service.
+
+zuul:
+  routes:
+  #With this configuration, any request to api/user endpoint will be redirected to 
+  #the ms-user microservice. And Zuul will take its address and port from Eureka.
+    ms-user: /api/user/**

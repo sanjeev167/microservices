@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.pon.service;
+
+import com.pon.entity.dto.UserDto;
+
+/**
+ * @author Sanjeev
+ *
+ */
+public interface EmailService {
+	void sendSimpleMessage(UserDto input);
+}

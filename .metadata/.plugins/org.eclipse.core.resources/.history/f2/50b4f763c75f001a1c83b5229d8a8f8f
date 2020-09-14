@@ -1,0 +1,15 @@
+# Sending mails is configured to use gmail. It is necessary to replace username and password with real values. 
+# This is the mail which will be used as a sender of the confirmation.
+
+mail:
+    host: smtp.gmail.com
+    port: 587
+    username: username
+    password: password
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      
+# Kafka server configuration where this ms-user application will write message on a topic
+
+     

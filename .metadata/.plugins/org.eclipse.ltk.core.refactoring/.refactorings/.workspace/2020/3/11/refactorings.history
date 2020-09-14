@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ms-mail/src/main/java/com/pon/entity/dto&apos;" deleteContents="false" description="Delete resource &apos;ms-mail/src/main/java/com/pon/entity/dto&apos;" element1="/ms-mail/src/main/java/com/pon/entity/dto" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1583657293513"/>
+</session>

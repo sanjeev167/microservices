@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pon.kafka.consumer;
+
+/**
+ * @author Sanjeev
+ *
+ */
+public class Receiver {
+
+}

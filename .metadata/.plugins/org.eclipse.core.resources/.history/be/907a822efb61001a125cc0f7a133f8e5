@@ -1,0 +1,9 @@
+
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 11000
+
+ribbon.ConnectTimeout: 11000
+ribbon.ReadTimeout: 40000
+
+
+zuul.ribbon.eager-load.enabled: true

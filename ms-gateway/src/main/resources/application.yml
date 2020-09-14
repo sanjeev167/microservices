@@ -1,0 +1,11 @@
+#Define those keys which are not sharable. Sharable keys should be kept at centralizrd location and will be loaded through
+#ms-config app.
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 44000
+
+ribbon.ConnectTimeout: 7000
+ribbon.ReadTimeout: 15000
+
+
+zuul.ribbon.eager-load.enabled: true
+

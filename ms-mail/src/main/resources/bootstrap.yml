@@ -1,0 +1,15 @@
+
+# bootstrap.yml is a parent of application.yml. It is loaded at the time of bootstrapping of this application.
+
+server:
+  port: 8082 #Port on which ms-user appplication pis running.
+spring:
+  application:
+    name: ms-mail #This is the name of the application
+    #The following configuration is for discovering ms-config-server
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: ms-config-server
+        

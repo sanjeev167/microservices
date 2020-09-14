@@ -1,0 +1,4 @@
+
+# In the application properties we configure the uri to the git repository 
+# and  the way how the config server search in the repository. 
+# They are going to be kept in ms-config-properties subfolder of the repository so:

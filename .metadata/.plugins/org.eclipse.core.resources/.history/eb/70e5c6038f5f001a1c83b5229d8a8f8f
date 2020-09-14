@@ -1,0 +1,11 @@
+server:
+  port: 8081 #Port on which ms-user appplication pis running.
+spring:
+  application:
+    name: ms-user #This is the name of the application
+    #The following configuration is for discovering ms-config-server
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: ms-config-server

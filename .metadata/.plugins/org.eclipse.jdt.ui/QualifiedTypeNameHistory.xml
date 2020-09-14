@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="com.pon.entity.UserDto"/>
+<fullyQualifiedTypeName name="com.pon.entity.Mail"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
+<fullyQualifiedTypeName name="com.pon.service.EmailService"/>
+<fullyQualifiedTypeName name="com.pon.repository.MailRepository"/>
+<fullyQualifiedTypeName name="com.pon.entity.dto.UserDto"/>
+</qualifiedTypeNameHistroy>

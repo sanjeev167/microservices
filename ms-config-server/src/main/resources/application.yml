@@ -1,0 +1,27 @@
+
+# In the application properties we configure the uri to the git repository 
+# and  the way how the config server search in the repository. 
+# They are going to be kept in ms-config-properties subfolder of the repository so:
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sanjeev167/microservices/
+          search-paths:
+            - "ms-config-properties/{application}/{profile}" #Here application is the name of the application 
+                                                             #whose configuration will be picked from the repository 
+                                                             #and the profile is the name of the profile i.e. dev, 
+                                                             #default, production or testing. The active one will be
+                                                             #considered
+## This is ms-discovery server configuration which will help this client app to get registered with eureka.
+## Don't put it in bootstrap.yml   
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8661/eureka

@@ -1,0 +1,1 @@
+INSERT INTO Mail (id, to, subject,text) VALUES (1, 'contactsanjiv@gmail.com', 'Important mail','ABC')

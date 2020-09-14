@@ -1,0 +1,48 @@
+
+
+# Database configuration                
+ spring:
+          h2:
+            console:
+              enabled: true
+              path: /h2-console
+          datasource:            
+            url: jdbc:h2:mem:userMaildb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+            username: sa
+            password:
+            
+#Mail Server Configuration            
+          mail:
+            host: smtp.gmail.com
+            port: 587
+            username: practiceonnet7@gmail.com
+            password: DarshitSingh@167
+            properties.mail.smtp:
+              auth: true
+              starttls.enable: true
+ # Kafka server configuration where this ms-user application will write message on a topic    
+          kafka:
+            bootstrap-servers: localhost:9092
+            topic:
+              userCreated: USER_CREATED_TOPIC
+              userDeleted: USER_DELTED_TOPIC
+              userUpdated: USER_DELTED_TOPIC
+            consumer:
+              mail_group-id: ms_mail_consumer
+              
+          security:
+              basic:
+                enabled: false
+
+
+## This is ms-discovery server configuration which will help this client app to get registered with eureka.
+## Don't put it in bootstrap.yml   
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8661/eureka
+

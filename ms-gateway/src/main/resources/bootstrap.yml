@@ -1,0 +1,25 @@
+# Configure the microservice Cloud config client.It will allow it to pick configuration 
+# from ms-config-server
+
+
+server:
+  port: 8765
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: ms-config-server
+        
+ ## This is ms-discovery server configuration which will help this client app to get registered with eureka.
+## Don't put it in bootstrap.yml   
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8661/eureka

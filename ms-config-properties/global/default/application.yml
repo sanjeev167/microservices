@@ -1,0 +1,7 @@
+#This has been set globally. This kafka address and topic keys will be available to all microservices
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      userCreated: USER_CREATED_TOPIC

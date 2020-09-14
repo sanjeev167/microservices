@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.pon.entity;
+
+/**
+ * @author Sanjeev
+ *
+ */
+public class Mail {
+
+}
